@@ -1,14 +1,251 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Han Fang</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Han Fang — Robotics, control, and deep learning portfolio." />
+  <title>Han Fang | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hi, I'm Han Fang</h1>
-  <p>I'm a Computer Engineering student interested in robotics, deel learning, and control.</p>
+  <a class="skip-link" href="#home">Skip to content</a>
 
-  <h2>Contact</h2>
-  <p>Email: hfang09@g.ucla.edu</p>
-  <p>GitHub: </p>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Go to Home">
+        <span class="brand-mark" aria-hidden="true">HF</span>
+        <span class="brand-text">Han Fang</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="nav-toggle-label">Menu</span>
+        </button>
+        <ul id="nav-links" class="nav-links">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#publications">Publications</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#misc">Misc</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="site-main" tabindex="-1">
+    <section class="section hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">Undergraduate Student</p>
+          <h1 id="hero-title">Han Fang</h1>
+          <p class="subtitle">Robotics · Control · Deep Learning</p>
+          <p class="lead">
+            “I am an undergraduate student interested in robotics, control, and deep learning. I work on
+            learning-based locomotion, manipulation, and hardware-software integration.”
+          </p>
+
+          <div class="button-row" aria-label="Primary links">
+            <a class="button primary" href="mailto:[YOUR EMAIL]">Email</a>
+            <a class="button" href="https://github.com/[YOUR GITHUB USERNAME]" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button" href="https://linkedin.com/in/[YOUR LINKEDIN]" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="button" href="assets/resume.pdf" target="_blank" rel="noreferrer">Resume (PDF)</a>
+          </div>
+
+          <ul class="quick-facts" aria-label="Quick facts">
+            <li><strong>Interests</strong>: learning-based control, robotics software, embedded systems</li>
+            <li><strong>Tools</strong>: Python, C/C++, ROS, Linux</li>
+            <li><strong>Open to</strong>: research, internships, collaborations</li>
+          </ul>
+        </div>
+
+        <div class="hero-media" aria-label="Profile photo">
+          <div class="avatar">
+            <img
+              id="profile-img"
+              src="assets/profile.jpg"
+              alt="Portrait photo of Han Fang"
+              loading="eager"
+              decoding="async"
+            />
+            <div id="avatar-fallback" class="avatar-fallback" aria-hidden="true">
+              <span>HF</span>
+            </div>
+          </div>
+          <p class="muted small">
+            Tip: place your photo at <code>assets/profile.jpg</code>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section" aria-labelledby="pubs-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="pubs-title">Publications</h2>
+          <p class="muted">Selected papers and manuscripts.</p>
+        </div>
+
+        <div class="empty-state">
+          <p><strong>Publications coming soon.</strong></p>
+          <p class="muted">When you’re ready, copy the commented example below and fill it in.</p>
+        </div>
+
+        <!-- Example publication card (uncomment to use)
+        <article class="card pub-card">
+          <div class="card-body">
+            <h3 class="card-title">[Publication Title]</h3>
+            <p class="meta">[Author 1], [Author 2], <strong>[Your Name]</strong></p>
+            <p class="meta">[Conference / Journal / Preprint] · [2026]</p>
+            <div class="chip-row" aria-label="Publication links">
+              <a class="chip" href="#" target="_blank" rel="noreferrer">Paper</a>
+              <a class="chip" href="#" target="_blank" rel="noreferrer">Code</a>
+              <a class="chip" href="#" target="_blank" rel="noreferrer">Project Page</a>
+              <a class="chip" href="#" target="_blank" rel="noreferrer">BibTeX</a>
+            </div>
+          </div>
+        </article>
+        -->
+      </div>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="projects-title">Projects</h2>
+          <p class="muted">A few things I’ve built or worked on.</p>
+        </div>
+
+        <div class="grid cards">
+          <article class="card project-card">
+            <div class="card-body">
+              <h3 class="card-title">[Project Title]</h3>
+              <p class="card-text">
+                Short description of the project and what you contributed. Keep it to 1–2 sentences.
+              </p>
+              <div class="tag-row" aria-label="Project tags">
+                <span class="tag">Robotics</span>
+                <span class="tag">Control</span>
+                <span class="tag">Python</span>
+              </div>
+              <div class="chip-row" aria-label="Project links">
+                <a class="chip" href="#" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="chip" href="#" target="_blank" rel="noreferrer">Demo</a>
+                <a class="chip" href="#" target="_blank" rel="noreferrer">Report</a>
+                <a class="chip" href="#" target="_blank" rel="noreferrer">Video</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="card-body">
+              <h3 class="card-title">[Project Title]</h3>
+              <p class="card-text">
+                Another project. Focus on the problem, your approach, and one concrete result or feature.
+              </p>
+              <div class="tag-row" aria-label="Project tags">
+                <span class="tag">Embedded</span>
+                <span class="tag">C/C++</span>
+                <span class="tag">Hardware</span>
+              </div>
+              <div class="chip-row" aria-label="Project links">
+                <a class="chip" href="#" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="chip" href="#" target="_blank" rel="noreferrer">Report</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="card-body">
+              <h3 class="card-title">[Project Title]</h3>
+              <p class="card-text">
+                A third placeholder project card so the grid looks polished immediately on desktop and mobile.
+              </p>
+              <div class="tag-row" aria-label="Project tags">
+                <span class="tag">Deep Learning</span>
+                <span class="tag">Simulation</span>
+              </div>
+              <div class="chip-row" aria-label="Project links">
+                <a class="chip" href="#" target="_blank" rel="noreferrer">Project Page</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="misc" class="section" aria-labelledby="misc-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="misc-title">Misc</h2>
+          <p class="muted">Coursework, awards, and other notes.</p>
+        </div>
+
+        <div class="grid two-col">
+          <section class="card">
+            <div class="card-body">
+              <h3 class="card-title">Coursework</h3>
+              <ul class="list">
+                <li>[Course Name] — [Topic / brief note]</li>
+                <li>[Course Name] — [Topic / brief note]</li>
+                <li>[Course Name] — [Topic / brief note]</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="card">
+            <div class="card-body">
+              <h3 class="card-title">Awards</h3>
+              <ul class="list">
+                <li>[Award Name] — [Year]</li>
+                <li>[Scholarship / Competition] — [Year]</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="contact-title">Contact</h2>
+          <p class="muted">The best way to reach me is email.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-body contact-card">
+            <ul class="contact-list">
+              <li>
+                <span class="contact-label">Email</span>
+                <a href="mailto:[YOUR EMAIL]">mailto:[YOUR EMAIL]</a>
+              </li>
+              <li>
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/[YOUR GITHUB USERNAME]" target="_blank" rel="noreferrer">
+                  github.com/[YOUR GITHUB USERNAME]
+                </a>
+              </li>
+              <li>
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://linkedin.com/in/[YOUR LINKEDIN]" target="_blank" rel="noreferrer">
+                  linkedin.com/in/[YOUR LINKEDIN]
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="muted">
+        © <span id="year"></span> <span id="footer-name">Han Fang</span>. Built with GitHub Pages.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
